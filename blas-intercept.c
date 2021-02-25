@@ -41,7 +41,10 @@ void cblas_daxpy(int n, double alpha, double *X, int incX, double *Y, int incY)
     // Timing utilities
     struct timeval start, end;
 
+    printf("blas-intercept: daxpy ");
+
     if (use_gpu == 0) {
+	printf("CPU ");
         // Load the original function with dlsym
 	orig_daxpy = dlsym(RTLD_NEXT, "cblas_daxpy");
 
@@ -51,6 +54,7 @@ void cblas_daxpy(int n, double alpha, double *X, int incX, double *Y, int incY)
 	gettimeofday(&end, NULL);
     }
     else {
+	printf("GPU ");
         // Create cuBLAS function with intercepted parameters
 	cudaError_t cudaStat;
 	cublasStatus_t stat;
@@ -82,7 +86,7 @@ void cblas_daxpy(int n, double alpha, double *X, int incX, double *Y, int incY)
 
     double elapsed = (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec); 
 
-    printf("blas-intercept: cblas_daxpy n: %d %f\n", n, elapsed);
+    printf("n: %d %0.1f us\n", n, elapsed);
 }
 
 void cblas_dgemm(int layout, int transA, int transB, int m, int n, int k, double alpha, double *A, int lda, double *B, int ldb, double beta, double *C, int ldc)
