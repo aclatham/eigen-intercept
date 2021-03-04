@@ -1,5 +1,10 @@
-all: blas-intercept.c
-	gcc -I/usr/local/cuda/include -fPIC -shared -o blas-intercept.so blas-intercept.c -ldl -L/usr/local/cuda/lib64 -lcudart -lcublas
+CC=gcc
+INCLUDE=-I/usr/local/cuda/include
+CFLAGS=-fPIC -shared -o
+LIB=-ldl -L/usr/local/cuda/lib64 -lcudart -lcublas
+
+all: src/blas-intercept.c src/blas-intercept.h
+	$(CC) $(INCLUDE) $(CFLAGS) lib/blas-intercept.so src/blas-intercept.c $(LIB)
 
 example:
-	/usr/local/cuda/bin/nvcc test.c -lcublas
+	gcc -g src/test.c -lblas -o test
