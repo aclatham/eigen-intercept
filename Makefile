@@ -8,3 +8,4 @@ all: src/blas-intercept.c src/blas-intercept.h
 
 example:
 	gcc -g src/test.c -lblas -o test
+	gcc -g src/experiment.c -lblas -o exp
