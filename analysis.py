@@ -1,16 +1,11 @@
 
+
 filename = "output.txt"
 
 # Open the output file
 file = open(filename, 'r')
 
-# Intercepted BLAS functions
-intercepts = {'cblas_daxpy' : [0, 0.0],
-              'cblas_dgemm' : [0, 0, 0],
-              'cblas_dgemv' : [0, 0, 0],
-              'cblas_dger' : [0, 0, 0],
-              'cblas_dscal' : [0, 0],
-              'cblas_sgemm' : [0, 0, 0]}
+calls = []
 
 # Read line by line
 while True:
@@ -23,26 +18,32 @@ while True:
     # Split line
     split = line.split()
 
-    if split[0][:-1] == "blas-intercept":
-        blas_id = split[1]
+    if split[0][:-1] == "blas-intercept" and split[1] != "sgemm":
+        calls.append(split)
 
-        # Update number of calls
-        intercepts[blas_id][0] = int(intercepts[blas_id][0] + 1)
-        
-        if blas_id == "cblas_daxpy" or blas_id == "cblas_dscal":
-            # Singe dimension calls
-            if intercepts[blas_id][1] == 0:
-                intercepts[blas_id][1] = int(split[3])
-            else:
-                intercepts[blas_id][1] = (intercepts[blas_id][1] + int(split[3])) / 2
-        else:
-            # Double dimension calls
-            if intercepts[blas_id][1] == 0:
-                intercepts[blas_id][1] = int(split[3])
-                intercepts[blas_id][2] = int(split[5])
-            else:
-                intercepts[blas_id][1] = (intercepts[blas_id][1] + int(split[3])) / 2
-                intercepts[blas_id][2] = (intercepts[blas_id][2] + int(split[5])) / 2
 
-print(intercepts)
+calls.sort(key = lambda calls: calls[-2])
+
+last_start = 0
+last_end = 0
+
+for item in calls:
+
+    overlap = False
+    if float(item[-2]) < last_end:
+        overlap = True
+
+
+    print(item[1], end=' ')
+    print(item[-2], end = ' ')
+    print(item[-1], end = ' ')
+
+    if overlap:
+        print("Overlap")
+    else:
+        print()
+
+    last_start = float(item[-2])
+    last_end = float(item[-1])
+
 file.close()

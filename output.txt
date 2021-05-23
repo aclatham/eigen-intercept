@@ -1,0 +1,378 @@
+OpenGL Version: 3.1 Mesa 20.0.8
+OpenGL Version: (null)
+blas-intercept: dger GPU m: 7          n: 6          load: 542908.0 us	 kernel: 54.0 us 1615746479952523.0 1615746480495485.0
+blas-intercept: dger GPU m: 7          n: 6          load: 981.0 us	 kernel: 19.0 us 1615746480496073.0 1615746480497073.0
+blas-intercept: dger GPU m: 7          n: 6          load: 968.0 us	 kernel: 18.0 us 1615746480497342.0 1615746480498328.0
+blas-intercept: dger GPU m: 7          n: 6          load: 966.0 us	 kernel: 18.0 us 1615746480498594.0 1615746480499578.0
+blas-intercept: dger GPU m: 7          n: 6          load: 965.0 us	 kernel: 18.0 us 1615746480499869.0 1615746480500852.0
+blas-intercept: dger GPU m: 7          n: 6          load: 963.0 us	 kernel: 18.0 us 1615746480501115.0 1615746480502096.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 964.0 us	 kernel: 65.0 us 1615746480502369.0 1615746480503398.0
+blas-intercept: dscal GPU n: 42         load: 943.0 us	 kernel: 26.0 us 1615746480503673.0 1615746480504642.0
+blas-intercept: daxpy GPU n: 7          load: 836.0 us	 kernel: 23.0 us 1615746480504657.0 1615746480505516.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 844.0 us	 kernel: 50.0 us 1615746480505701.0 1615746480506595.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 843.0 us	 kernel: 26.0 us 1615746480506781.0 1615746480507650.0
+blas-intercept: daxpy GPU n: 6          load: 836.0 us	 kernel: 18.0 us 1615746480507836.0 1615746480508690.0
+blas-intercept: dscal GPU n: 6          load: 824.0 us	 kernel: 18.0 us 1615746480508872.0 1615746480509714.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1829.0 us
+blas-intercept: daxpy GPU n: 7          load: 1834.0 us	 kernel: 51.0 us 1615746480714202.0 1615746480716087.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1718.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 2006.0 us	 kernel: 51.0 us 1615746480869998.0 1615746480872055.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1117.0 us	 kernel: 23.0 us 1615746480872374.0 1615746480873514.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1328.0 us	 kernel: 22.0 us 1615746480873761.0 1615746480875111.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1113.0 us	 kernel: 22.0 us 1615746480875359.0 1615746480876494.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1098.0 us	 kernel: 21.0 us 1615746480876740.0 1615746480877860.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1102.0 us	 kernel: 21.0 us 1615746480878104.0 1615746480879227.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1107.0 us	 kernel: 53.0 us 1615746480879472.0 1615746480880632.0
+blas-intercept: dscal GPU n: 42         load: 1071.0 us	 kernel: 24.0 us 1615746480880881.0 1615746480881976.0
+blas-intercept: daxpy GPU n: 7          load: 1359.0 us	 kernel: 22.0 us 1615746480881985.0 1615746480883366.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1018.0 us	 kernel: 30.0 us 1615746480883613.0 1615746480884661.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 849.0 us	 kernel: 22.0 us 1615746480884853.0 1615746480885724.0
+blas-intercept: daxpy GPU n: 6          load: 835.0 us	 kernel: 18.0 us 1615746480885916.0 1615746480886769.0
+blas-intercept: dscal GPU n: 6          load: 828.0 us	 kernel: 18.0 us 1615746480886956.0 1615746480887802.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 859.0 us	 kernel: 21.0 us 1615746480887934.0 1615746480888814.0
+blas-intercept: daxpy GPU n: 6          load: 823.0 us	 kernel: 18.0 us 1615746480889001.0 1615746480889842.0
+blas-intercept: daxpy GPU n: 7          load: 822.0 us	 kernel: 17.0 us 1615746480890024.0 1615746480890863.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 877.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 2110.0 us	 kernel: 53.0 us 1615746481058720.0 1615746481060883.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1071.0 us	 kernel: 22.0 us 1615746481061187.0 1615746481062280.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1095.0 us	 kernel: 21.0 us 1615746481062590.0 1615746481063706.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1070.0 us	 kernel: 21.0 us 1615746481063942.0 1615746481065033.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1066.0 us	 kernel: 20.0 us 1615746481065267.0 1615746481066353.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1069.0 us	 kernel: 20.0 us 1615746481066590.0 1615746481067679.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1074.0 us	 kernel: 57.0 us 1615746481067918.0 1615746481069049.0
+blas-intercept: dscal GPU n: 42         load: 1042.0 us	 kernel: 29.0 us 1615746481069288.0 1615746481070359.0
+blas-intercept: daxpy GPU n: 7          load: 1075.0 us	 kernel: 26.0 us 1615746481070368.0 1615746481071469.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1066.0 us	 kernel: 34.0 us 1615746481071712.0 1615746481072812.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1067.0 us	 kernel: 27.0 us 1615746481073051.0 1615746481074145.0
+blas-intercept: daxpy GPU n: 6          load: 1053.0 us	 kernel: 21.0 us 1615746481074385.0 1615746481075459.0
+blas-intercept: dscal GPU n: 6          load: 943.0 us	 kernel: 18.0 us 1615746481075710.0 1615746481076671.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 847.0 us	 kernel: 21.0 us 1615746481076722.0 1615746481077590.0
+blas-intercept: daxpy GPU n: 6          load: 819.0 us	 kernel: 17.0 us 1615746481077774.0 1615746481078610.0
+blas-intercept: daxpy GPU n: 7          load: 814.0 us	 kernel: 18.0 us 1615746481078791.0 1615746481079623.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 878.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1746.0 us	 kernel: 47.0 us 1615746481250872.0 1615746481252665.0
+blas-intercept: dger GPU m: 7          n: 6          load: 690.0 us	 kernel: 19.0 us 1615746481252911.0 1615746481253620.0
+blas-intercept: dger GPU m: 7          n: 6          load: 841.0 us	 kernel: 17.0 us 1615746481253804.0 1615746481254662.0
+blas-intercept: dger GPU m: 7          n: 6          load: 842.0 us	 kernel: 18.0 us 1615746481254846.0 1615746481255706.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1107.0 us	 kernel: 21.0 us 1615746481255900.0 1615746481257028.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1061.0 us	 kernel: 21.0 us 1615746481257265.0 1615746481258348.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1067.0 us	 kernel: 53.0 us 1615746481258585.0 1615746481259705.0
+blas-intercept: dscal GPU n: 42         load: 1043.0 us	 kernel: 23.0 us 1615746481259946.0 1615746481261012.0
+blas-intercept: daxpy GPU n: 7          load: 1358.0 us	 kernel: 20.0 us 1615746481261021.0 1615746481262399.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1106.0 us	 kernel: 35.0 us 1615746481262640.0 1615746481263781.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 694.0 us	 kernel: 22.0 us 1615746481264043.0 1615746481264759.0
+blas-intercept: daxpy GPU n: 6          load: 830.0 us	 kernel: 18.0 us 1615746481264949.0 1615746481265797.0
+blas-intercept: dscal GPU n: 6          load: 818.0 us	 kernel: 17.0 us 1615746481265981.0 1615746481266816.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 856.0 us	 kernel: 21.0 us 1615746481266900.0 1615746481267777.0
+blas-intercept: daxpy GPU n: 6          load: 823.0 us	 kernel: 17.0 us 1615746481267962.0 1615746481268802.0
+blas-intercept: daxpy GPU n: 7          load: 819.0 us	 kernel: 18.0 us 1615746481268984.0 1615746481269821.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 891.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1844.0 us	 kernel: 59.0 us 1615746481439796.0 1615746481441699.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1067.0 us	 kernel: 24.0 us 1615746481441991.0 1615746481443083.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1087.0 us	 kernel: 21.0 us 1615746481443319.0 1615746481444427.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 21.0 us 1615746481444719.0 1615746481445808.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1067.0 us	 kernel: 21.0 us 1615746481446044.0 1615746481447132.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1069.0 us	 kernel: 21.0 us 1615746481447368.0 1615746481448458.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1059.0 us	 kernel: 50.0 us 1615746481448694.0 1615746481449804.0
+blas-intercept: dscal GPU n: 42         load: 1043.0 us	 kernel: 23.0 us 1615746481450039.0 1615746481451105.0
+blas-intercept: daxpy GPU n: 7          load: 1053.0 us	 kernel: 17.0 us 1615746481451114.0 1615746481452184.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 827.0 us	 kernel: 30.0 us 1615746481452365.0 1615746481453222.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 834.0 us	 kernel: 22.0 us 1615746481453408.0 1615746481454264.0
+blas-intercept: daxpy GPU n: 6          load: 822.0 us	 kernel: 17.0 us 1615746481454448.0 1615746481455287.0
+blas-intercept: dscal GPU n: 6          load: 813.0 us	 kernel: 17.0 us 1615746481455466.0 1615746481456296.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 839.0 us	 kernel: 22.0 us 1615746481456339.0 1615746481457200.0
+blas-intercept: daxpy GPU n: 6          load: 812.0 us	 kernel: 18.0 us 1615746481457383.0 1615746481458213.0
+blas-intercept: daxpy GPU n: 7          load: 818.0 us	 kernel: 17.0 us 1615746481458392.0 1615746481459227.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1192.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1900.0 us	 kernel: 46.0 us 1615746481644990.0 1615746481646936.0
+blas-intercept: dger GPU m: 7          n: 6          load: 702.0 us	 kernel: 21.0 us 1615746481647188.0 1615746481647911.0
+blas-intercept: dger GPU m: 7          n: 6          load: 832.0 us	 kernel: 18.0 us 1615746481648098.0 1615746481648948.0
+blas-intercept: dger GPU m: 7          n: 6          load: 828.0 us	 kernel: 18.0 us 1615746481649131.0 1615746481649977.0
+blas-intercept: dger GPU m: 7          n: 6          load: 826.0 us	 kernel: 18.0 us 1615746481650160.0 1615746481651004.0
+blas-intercept: dger GPU m: 7          n: 6          load: 939.0 us	 kernel: 23.0 us 1615746481651187.0 1615746481652149.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1064.0 us	 kernel: 54.0 us 1615746481652386.0 1615746481653504.0
+blas-intercept: dscal GPU n: 42         load: 1043.0 us	 kernel: 24.0 us 1615746481653756.0 1615746481654823.0
+blas-intercept: daxpy GPU n: 7          load: 1133.0 us	 kernel: 22.0 us 1615746481654832.0 1615746481655987.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1085.0 us	 kernel: 39.0 us 1615746481656230.0 1615746481657354.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1084.0 us	 kernel: 27.0 us 1615746481657601.0 1615746481658712.0
+blas-intercept: daxpy GPU n: 6          load: 1097.0 us	 kernel: 20.0 us 1615746481658957.0 1615746481660074.0
+blas-intercept: dscal GPU n: 6          load: 820.0 us	 kernel: 17.0 us 1615746481660268.0 1615746481661105.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 843.0 us	 kernel: 20.0 us 1615746481661161.0 1615746481662024.0
+blas-intercept: daxpy GPU n: 6          load: 822.0 us	 kernel: 18.0 us 1615746481662210.0 1615746481663050.0
+blas-intercept: daxpy GPU n: 7          load: 814.0 us	 kernel: 18.0 us 1615746481663232.0 1615746481664064.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 885.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1681.0 us	 kernel: 44.0 us 1615746481829319.0 1615746481831044.0
+blas-intercept: dger GPU m: 7          n: 6          load: 688.0 us	 kernel: 19.0 us 1615746481831287.0 1615746481831994.0
+blas-intercept: dger GPU m: 7          n: 6          load: 829.0 us	 kernel: 18.0 us 1615746481832178.0 1615746481833025.0
+blas-intercept: dger GPU m: 7          n: 6          load: 800.0 us	 kernel: 17.0 us 1615746481833210.0 1615746481834027.0
+blas-intercept: dger GPU m: 7          n: 6          load: 833.0 us	 kernel: 17.0 us 1615746481834267.0 1615746481835117.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1158.0 us	 kernel: 21.0 us 1615746481835301.0 1615746481836480.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1016.0 us	 kernel: 50.0 us 1615746481836717.0 1615746481837783.0
+blas-intercept: dscal GPU n: 42         load: 1046.0 us	 kernel: 24.0 us 1615746481838021.0 1615746481839091.0
+blas-intercept: daxpy GPU n: 7          load: 1089.0 us	 kernel: 21.0 us 1615746481839099.0 1615746481840209.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1068.0 us	 kernel: 34.0 us 1615746481840445.0 1615746481841547.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1059.0 us	 kernel: 27.0 us 1615746481841786.0 1615746481842872.0
+blas-intercept: daxpy GPU n: 6          load: 1025.0 us	 kernel: 18.0 us 1615746481843109.0 1615746481844152.0
+blas-intercept: dscal GPU n: 6          load: 812.0 us	 kernel: 17.0 us 1615746481844332.0 1615746481845162.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 855.0 us	 kernel: 21.0 us 1615746481845207.0 1615746481846083.0
+blas-intercept: daxpy GPU n: 6          load: 816.0 us	 kernel: 17.0 us 1615746481846265.0 1615746481847098.0
+blas-intercept: daxpy GPU n: 7          load: 825.0 us	 kernel: 17.0 us 1615746481847276.0 1615746481848119.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 893.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1943.0 us	 kernel: 52.0 us 1615746482023305.0 1615746482025300.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1071.0 us	 kernel: 23.0 us 1615746482025601.0 1615746482026695.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1025.0 us	 kernel: 21.0 us 1615746482026931.0 1615746482027977.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1065.0 us	 kernel: 21.0 us 1615746482028213.0 1615746482029300.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1060.0 us	 kernel: 21.0 us 1615746482029537.0 1615746482030619.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1077.0 us	 kernel: 24.0 us 1615746482030853.0 1615746482031954.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 685.0 us	 kernel: 54.0 us 1615746482032183.0 1615746482032922.0
+blas-intercept: dscal GPU n: 42         load: 816.0 us	 kernel: 20.0 us 1615746482033110.0 1615746482033946.0
+blas-intercept: daxpy GPU n: 7          load: 1251.0 us	 kernel: 18.0 us 1615746482033952.0 1615746482035221.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 964.0 us	 kernel: 31.0 us 1615746482035492.0 1615746482036487.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 960.0 us	 kernel: 22.0 us 1615746482036756.0 1615746482037738.0
+blas-intercept: daxpy GPU n: 6          load: 934.0 us	 kernel: 18.0 us 1615746482038008.0 1615746482038960.0
+blas-intercept: dscal GPU n: 6          load: 940.0 us	 kernel: 18.0 us 1615746482039225.0 1615746482040183.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 868.0 us	 kernel: 21.0 us 1615746482040240.0 1615746482041129.0
+blas-intercept: daxpy GPU n: 6          load: 820.0 us	 kernel: 18.0 us 1615746482041320.0 1615746482042158.0
+blas-intercept: daxpy GPU n: 7          load: 822.0 us	 kernel: 18.0 us 1615746482042342.0 1615746482043182.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 891.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1544.0 us	 kernel: 48.0 us 1615746482220686.0 1615746482222278.0
+blas-intercept: dger GPU m: 7          n: 6          load: 694.0 us	 kernel: 19.0 us 1615746482222526.0 1615746482223239.0
+blas-intercept: dger GPU m: 7          n: 6          load: 936.0 us	 kernel: 22.0 us 1615746482223424.0 1615746482224382.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1075.0 us	 kernel: 21.0 us 1615746482224619.0 1615746482225715.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 21.0 us 1615746482225951.0 1615746482227041.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1078.0 us	 kernel: 32.0 us 1615746482227341.0 1615746482228451.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1080.0 us	 kernel: 54.0 us 1615746482228692.0 1615746482229826.0
+blas-intercept: dscal GPU n: 42         load: 1048.0 us	 kernel: 24.0 us 1615746482230076.0 1615746482231148.0
+blas-intercept: daxpy GPU n: 7          load: 1309.0 us	 kernel: 22.0 us 1615746482231156.0 1615746482232487.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1070.0 us	 kernel: 35.0 us 1615746482232729.0 1615746482233834.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1074.0 us	 kernel: 27.0 us 1615746482234076.0 1615746482235177.0
+blas-intercept: daxpy GPU n: 6          load: 1034.0 us	 kernel: 18.0 us 1615746482235415.0 1615746482236467.0
+blas-intercept: dscal GPU n: 6          load: 811.0 us	 kernel: 17.0 us 1615746482236645.0 1615746482237473.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 880.0 us	 kernel: 22.0 us 1615746482237530.0 1615746482238432.0
+blas-intercept: daxpy GPU n: 6          load: 816.0 us	 kernel: 18.0 us 1615746482238615.0 1615746482239449.0
+blas-intercept: daxpy GPU n: 7          load: 822.0 us	 kernel: 18.0 us 1615746482239633.0 1615746482240473.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 759.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1885.0 us	 kernel: 46.0 us 1615746482418224.0 1615746482420155.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 23.0 us 1615746482420450.0 1615746482421541.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 21.0 us 1615746482421775.0 1615746482422864.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1156.0 us	 kernel: 21.0 us 1615746482423099.0 1615746482424276.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1067.0 us	 kernel: 20.0 us 1615746482424508.0 1615746482425595.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1067.0 us	 kernel: 21.0 us 1615746482425830.0 1615746482426918.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1064.0 us	 kernel: 50.0 us 1615746482427155.0 1615746482428269.0
+blas-intercept: dscal GPU n: 42         load: 1037.0 us	 kernel: 24.0 us 1615746482428506.0 1615746482429567.0
+blas-intercept: daxpy GPU n: 7          load: 1512.0 us	 kernel: 22.0 us 1615746482429575.0 1615746482431109.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1091.0 us	 kernel: 34.0 us 1615746482431350.0 1615746482432475.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1077.0 us	 kernel: 27.0 us 1615746482432719.0 1615746482433823.0
+blas-intercept: daxpy GPU n: 6          load: 1059.0 us	 kernel: 21.0 us 1615746482434067.0 1615746482435147.0
+blas-intercept: dscal GPU n: 6          load: 1255.0 us	 kernel: 18.0 us 1615746482435383.0 1615746482436656.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1278.0 us	 kernel: 25.0 us 1615746482436736.0 1615746482438039.0
+blas-intercept: daxpy GPU n: 6          load: 822.0 us	 kernel: 18.0 us 1615746482438225.0 1615746482439065.0
+blas-intercept: daxpy GPU n: 7          load: 822.0 us	 kernel: 17.0 us 1615746482439246.0 1615746482440085.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 912.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1929.0 us	 kernel: 49.0 us 1615746482617226.0 1615746482619204.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1085.0 us	 kernel: 23.0 us 1615746482619507.0 1615746482620615.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 22.0 us 1615746482620861.0 1615746482621951.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1067.0 us	 kernel: 21.0 us 1615746482622193.0 1615746482623281.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1044.0 us	 kernel: 21.0 us 1615746482623515.0 1615746482624580.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1072.0 us	 kernel: 21.0 us 1615746482624815.0 1615746482625908.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1072.0 us	 kernel: 54.0 us 1615746482626211.0 1615746482627337.0
+blas-intercept: dscal GPU n: 42         load: 1057.0 us	 kernel: 24.0 us 1615746482627580.0 1615746482628661.0
+blas-intercept: daxpy GPU n: 7          load: 1468.0 us	 kernel: 21.0 us 1615746482628670.0 1615746482630159.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1077.0 us	 kernel: 36.0 us 1615746482630394.0 1615746482631507.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1064.0 us	 kernel: 27.0 us 1615746482631758.0 1615746482632849.0
+blas-intercept: daxpy GPU n: 6          load: 1056.0 us	 kernel: 21.0 us 1615746482633090.0 1615746482634167.0
+blas-intercept: dscal GPU n: 6          load: 1048.0 us	 kernel: 21.0 us 1615746482634396.0 1615746482635466.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1399.0 us	 kernel: 20.0 us 1615746482635525.0 1615746482636944.0
+blas-intercept: daxpy GPU n: 6          load: 823.0 us	 kernel: 17.0 us 1615746482637129.0 1615746482637969.0
+blas-intercept: daxpy GPU n: 7          load: 818.0 us	 kernel: 18.0 us 1615746482638149.0 1615746482638985.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 893.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 2491.0 us	 kernel: 55.0 us 1615746482824653.0 1615746482827199.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1747.0 us	 kernel: 27.0 us 1615746482827614.0 1615746482829389.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1739.0 us	 kernel: 27.0 us 1615746482829739.0 1615746482831505.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1732.0 us	 kernel: 27.0 us 1615746482831860.0 1615746482833619.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1730.0 us	 kernel: 28.0 us 1615746482833964.0 1615746482835722.0
+blas-intercept: dger GPU m: 7          n: 6          load: 833.0 us	 kernel: 18.0 us 1615746482836086.0 1615746482836937.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 829.0 us	 kernel: 49.0 us 1615746482837119.0 1615746482837997.0
+blas-intercept: dscal GPU n: 42         load: 805.0 us	 kernel: 20.0 us 1615746482838182.0 1615746482839007.0
+blas-intercept: daxpy GPU n: 7          load: 1247.0 us	 kernel: 18.0 us 1615746482839013.0 1615746482840278.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 847.0 us	 kernel: 31.0 us 1615746482840464.0 1615746482841342.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 839.0 us	 kernel: 22.0 us 1615746482841533.0 1615746482842394.0
+blas-intercept: daxpy GPU n: 6          load: 825.0 us	 kernel: 18.0 us 1615746482842582.0 1615746482843425.0
+blas-intercept: dscal GPU n: 6          load: 820.0 us	 kernel: 17.0 us 1615746482843609.0 1615746482844446.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1167.0 us	 kernel: 21.0 us 1615746482844514.0 1615746482845702.0
+blas-intercept: daxpy GPU n: 6          load: 820.0 us	 kernel: 18.0 us 1615746482845887.0 1615746482846725.0
+blas-intercept: daxpy GPU n: 7          load: 831.0 us	 kernel: 17.0 us 1615746482846903.0 1615746482847751.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 982.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 2191.0 us	 kernel: 58.0 us 1615746483042410.0 1615746483044659.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1075.0 us	 kernel: 23.0 us 1615746483044971.0 1615746483046069.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 22.0 us 1615746483046308.0 1615746483047398.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1120.0 us	 kernel: 21.0 us 1615746483047632.0 1615746483048773.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1071.0 us	 kernel: 21.0 us 1615746483049012.0 1615746483050104.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1064.0 us	 kernel: 22.0 us 1615746483050341.0 1615746483051427.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1067.0 us	 kernel: 60.0 us 1615746483051672.0 1615746483052799.0
+blas-intercept: dscal GPU n: 42         load: 1048.0 us	 kernel: 28.0 us 1615746483053124.0 1615746483054200.0
+blas-intercept: daxpy GPU n: 7          load: 1405.0 us	 kernel: 41.0 us 1615746483054209.0 1615746483055655.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 911.0 us	 kernel: 31.0 us 1615746483055918.0 1615746483056860.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 834.0 us	 kernel: 24.0 us 1615746483057045.0 1615746483057903.0
+blas-intercept: daxpy GPU n: 6          load: 820.0 us	 kernel: 17.0 us 1615746483058089.0 1615746483058926.0
+blas-intercept: dscal GPU n: 6          load: 827.0 us	 kernel: 18.0 us 1615746483059109.0 1615746483059954.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1216.0 us	 kernel: 22.0 us 1615746483060019.0 1615746483061257.0
+blas-intercept: daxpy GPU n: 6          load: 822.0 us	 kernel: 18.0 us 1615746483061439.0 1615746483062279.0
+blas-intercept: daxpy GPU n: 7          load: 659.0 us	 kernel: 17.0 us 1615746483062459.0 1615746483063135.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1037.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1886.0 us	 kernel: 46.0 us 1615746483251508.0 1615746483253440.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 22.0 us 1615746483253732.0 1615746483254822.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1071.0 us	 kernel: 21.0 us 1615746483255059.0 1615746483256151.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1058.0 us	 kernel: 21.0 us 1615746483256386.0 1615746483257465.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1063.0 us	 kernel: 22.0 us 1615746483257696.0 1615746483258781.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1327.0 us	 kernel: 18.0 us 1615746483259012.0 1615746483260357.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 826.0 us	 kernel: 47.0 us 1615746483260539.0 1615746483261412.0
+blas-intercept: dscal GPU n: 42         load: 809.0 us	 kernel: 19.0 us 1615746483261595.0 1615746483262423.0
+blas-intercept: daxpy GPU n: 7          load: 1293.0 us	 kernel: 18.0 us 1615746483262430.0 1615746483263741.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 850.0 us	 kernel: 30.0 us 1615746483263928.0 1615746483264808.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 847.0 us	 kernel: 22.0 us 1615746483264996.0 1615746483265865.0
+blas-intercept: daxpy GPU n: 6          load: 832.0 us	 kernel: 17.0 us 1615746483266052.0 1615746483266901.0
+blas-intercept: dscal GPU n: 6          load: 813.0 us	 kernel: 18.0 us 1615746483267086.0 1615746483267917.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1212.0 us	 kernel: 21.0 us 1615746483267987.0 1615746483269220.0
+blas-intercept: daxpy GPU n: 6          load: 823.0 us	 kernel: 17.0 us 1615746483269403.0 1615746483270243.0
+blas-intercept: daxpy GPU n: 7          load: 818.0 us	 kernel: 17.0 us 1615746483270422.0 1615746483271257.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1025.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1580.0 us	 kernel: 44.0 us 1615746483474291.0 1615746483475915.0
+blas-intercept: dger GPU m: 7          n: 6          load: 697.0 us	 kernel: 19.0 us 1615746483476168.0 1615746483476884.0
+blas-intercept: dger GPU m: 7          n: 6          load: 838.0 us	 kernel: 17.0 us 1615746483477071.0 1615746483477926.0
+blas-intercept: dger GPU m: 7          n: 6          load: 833.0 us	 kernel: 18.0 us 1615746483478111.0 1615746483478962.0
+blas-intercept: dger GPU m: 7          n: 6          load: 844.0 us	 kernel: 23.0 us 1615746483479147.0 1615746483480014.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1129.0 us	 kernel: 22.0 us 1615746483480261.0 1615746483481412.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1145.0 us	 kernel: 51.0 us 1615746483481658.0 1615746483482854.0
+blas-intercept: dscal GPU n: 42         load: 1106.0 us	 kernel: 23.0 us 1615746483483130.0 1615746483484260.0
+blas-intercept: daxpy GPU n: 7          load: 1494.0 us	 kernel: 21.0 us 1615746483484325.0 1615746483485840.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1332.0 us	 kernel: 36.0 us 1615746483486091.0 1615746483487459.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1131.0 us	 kernel: 28.0 us 1615746483487713.0 1615746483488872.0
+blas-intercept: daxpy GPU n: 6          load: 1307.0 us	 kernel: 21.0 us 1615746483489156.0 1615746483490484.0
+blas-intercept: dscal GPU n: 6          load: 1108.0 us	 kernel: 244.0 us 1615746483490723.0 1615746483492075.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1212.0 us	 kernel: 21.0 us 1615746483492175.0 1615746483493408.0
+blas-intercept: daxpy GPU n: 6          load: 818.0 us	 kernel: 18.0 us 1615746483493594.0 1615746483494430.0
+blas-intercept: daxpy GPU n: 7          load: 819.0 us	 kernel: 18.0 us 1615746483494608.0 1615746483495445.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1100.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1512.0 us	 kernel: 44.0 us 1615746483693416.0 1615746483694972.0
+blas-intercept: dger GPU m: 7          n: 6          load: 694.0 us	 kernel: 19.0 us 1615746483695209.0 1615746483695922.0
+blas-intercept: dger GPU m: 7          n: 6          load: 828.0 us	 kernel: 18.0 us 1615746483696107.0 1615746483696953.0
+blas-intercept: dger GPU m: 7          n: 6          load: 824.0 us	 kernel: 17.0 us 1615746483697135.0 1615746483697976.0
+blas-intercept: dger GPU m: 7          n: 6          load: 824.0 us	 kernel: 18.0 us 1615746483698157.0 1615746483698999.0
+blas-intercept: dger GPU m: 7          n: 6          load: 882.0 us	 kernel: 24.0 us 1615746483699181.0 1615746483700087.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1056.0 us	 kernel: 52.0 us 1615746483700334.0 1615746483701442.0
+blas-intercept: dscal GPU n: 42         load: 1037.0 us	 kernel: 23.0 us 1615746483701679.0 1615746483702739.0
+blas-intercept: daxpy GPU n: 7          load: 1656.0 us	 kernel: 21.0 us 1615746483702748.0 1615746483704425.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1442.0 us	 kernel: 35.0 us 1615746483704757.0 1615746483706234.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1433.0 us	 kernel: 27.0 us 1615746483706568.0 1615746483708028.0
+blas-intercept: daxpy GPU n: 6          load: 1429.0 us	 kernel: 21.0 us 1615746483708364.0 1615746483709814.0
+blas-intercept: dscal GPU n: 6          load: 1190.0 us	 kernel: 235.0 us 1615746483710142.0 1615746483711567.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1045.0 us	 kernel: 21.0 us 1615746483711634.0 1615746483712700.0
+blas-intercept: daxpy GPU n: 6          load: 820.0 us	 kernel: 18.0 us 1615746483712886.0 1615746483713724.0
+blas-intercept: daxpy GPU n: 7          load: 818.0 us	 kernel: 18.0 us 1615746483713909.0 1615746483714745.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1072.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1977.0 us	 kernel: 48.0 us 1615746483903047.0 1615746483905072.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1079.0 us	 kernel: 21.0 us 1615746483905369.0 1615746483906469.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1080.0 us	 kernel: 21.0 us 1615746483906707.0 1615746483907808.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 21.0 us 1615746483908047.0 1615746483909136.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1071.0 us	 kernel: 21.0 us 1615746483909375.0 1615746483910467.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1094.0 us	 kernel: 21.0 us 1615746483910710.0 1615746483911825.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 836.0 us	 kernel: 45.0 us 1615746483912099.0 1615746483912980.0
+blas-intercept: dscal GPU n: 42         load: 826.0 us	 kernel: 21.0 us 1615746483913167.0 1615746483914014.0
+blas-intercept: daxpy GPU n: 7          load: 1185.0 us	 kernel: 18.0 us 1615746483914020.0 1615746483915223.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 695.0 us	 kernel: 29.0 us 1615746483915464.0 1615746483916189.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 829.0 us	 kernel: 22.0 us 1615746483916374.0 1615746483917225.0
+blas-intercept: daxpy GPU n: 6          load: 823.0 us	 kernel: 17.0 us 1615746483917415.0 1615746483918255.0
+blas-intercept: dscal GPU n: 6          load: 816.0 us	 kernel: 18.0 us 1615746483918434.0 1615746483919268.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1165.0 us	 kernel: 22.0 us 1615746483919333.0 1615746483920520.0
+blas-intercept: daxpy GPU n: 6          load: 818.0 us	 kernel: 18.0 us 1615746483920703.0 1615746483921539.0
+blas-intercept: daxpy GPU n: 7          load: 817.0 us	 kernel: 20.0 us 1615746483921717.0 1615746483922554.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 1081.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1837.0 us	 kernel: 47.0 us 1615746484104571.0 1615746484106455.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1085.0 us	 kernel: 22.0 us 1615746484106756.0 1615746484107863.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1072.0 us	 kernel: 22.0 us 1615746484108103.0 1615746484109197.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 21.0 us 1615746484109441.0 1615746484110530.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1075.0 us	 kernel: 21.0 us 1615746484110765.0 1615746484111861.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1069.0 us	 kernel: 21.0 us 1615746484112094.0 1615746484113184.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1083.0 us	 kernel: 50.0 us 1615746484113421.0 1615746484114554.0
+blas-intercept: dscal GPU n: 42         load: 3753.0 us	 kernel: 177.0 us 1615746484114796.0 1615746484118726.0
+blas-intercept: daxpy GPU n: 7          load: 1456.0 us	 kernel: 19.0 us 1615746484118733.0 1615746484120209.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 852.0 us	 kernel: 36.0 us 1615746484120408.0 1615746484121296.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 847.0 us	 kernel: 23.0 us 1615746484121493.0 1615746484122363.0
+blas-intercept: daxpy GPU n: 6          load: 833.0 us	 kernel: 18.0 us 1615746484122556.0 1615746484123407.0
+blas-intercept: dscal GPU n: 6          load: 829.0 us	 kernel: 17.0 us 1615746484123596.0 1615746484124442.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1296.0 us	 kernel: 21.0 us 1615746484124506.0 1615746484125823.0
+blas-intercept: daxpy GPU n: 6          load: 831.0 us	 kernel: 18.0 us 1615746484126015.0 1615746484126864.0
+blas-intercept: daxpy GPU n: 7          load: 826.0 us	 kernel: 18.0 us 1615746484127052.0 1615746484127896.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 2025.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1779.0 us	 kernel: 45.0 us 1615746484313113.0 1615746484314937.0
+blas-intercept: dger GPU m: 7          n: 6          load: 711.0 us	 kernel: 19.0 us 1615746484315190.0 1615746484315920.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1082.0 us	 kernel: 21.0 us 1615746484316184.0 1615746484317287.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1072.0 us	 kernel: 21.0 us 1615746484317533.0 1615746484318626.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1076.0 us	 kernel: 21.0 us 1615746484318871.0 1615746484319968.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1075.0 us	 kernel: 21.0 us 1615746484320215.0 1615746484321311.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1072.0 us	 kernel: 51.0 us 1615746484321559.0 1615746484322682.0
+blas-intercept: dscal GPU n: 42         load: 1057.0 us	 kernel: 24.0 us 1615746484322930.0 1615746484324011.0
+blas-intercept: daxpy GPU n: 7          load: 1356.0 us	 kernel: 22.0 us 1615746484324019.0 1615746484325397.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 1071.0 us	 kernel: 35.0 us 1615746484325640.0 1615746484326746.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 1344.0 us	 kernel: 22.0 us 1615746484327047.0 1615746484328413.0
+blas-intercept: daxpy GPU n: 6          load: 825.0 us	 kernel: 17.0 us 1615746484328602.0 1615746484329444.0
+blas-intercept: dscal GPU n: 6          load: 817.0 us	 kernel: 18.0 us 1615746484329630.0 1615746484330465.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 864.0 us	 kernel: 21.0 us 1615746484330540.0 1615746484331425.0
+blas-intercept: daxpy GPU n: 6          load: 829.0 us	 kernel: 18.0 us 1615746484331612.0 1615746484332459.0
+blas-intercept: daxpy GPU n: 7          load: 827.0 us	 kernel: 17.0 us 1615746484332639.0 1615746484333483.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 906.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 1851.0 us	 kernel: 51.0 us 1615746484502800.0 1615746484504702.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1095.0 us	 kernel: 22.0 us 1615746484505006.0 1615746484506123.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 21.0 us 1615746484506362.0 1615746484507451.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1071.0 us	 kernel: 21.0 us 1615746484507696.0 1615746484508788.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1066.0 us	 kernel: 35.0 us 1615746484509022.0 1615746484510123.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1070.0 us	 kernel: 21.0 us 1615746484510359.0 1615746484511450.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 985.0 us	 kernel: 50.0 us 1615746484511704.0 1615746484512739.0
+blas-intercept: dscal GPU n: 42         load: 813.0 us	 kernel: 20.0 us 1615746484512932.0 1615746484513765.0
+blas-intercept: daxpy GPU n: 7          load: 1197.0 us	 kernel: 18.0 us 1615746484513772.0 1615746484514987.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 861.0 us	 kernel: 32.0 us 1615746484515180.0 1615746484516073.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 843.0 us	 kernel: 22.0 us 1615746484516269.0 1615746484517134.0
+blas-intercept: daxpy GPU n: 6          load: 833.0 us	 kernel: 18.0 us 1615746484517330.0 1615746484518181.0
+blas-intercept: dscal GPU n: 6          load: 822.0 us	 kernel: 17.0 us 1615746484518372.0 1615746484519211.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 896.0 us	 kernel: 21.0 us 1615746484519311.0 1615746484520228.0
+blas-intercept: daxpy GPU n: 6          load: 827.0 us	 kernel: 17.0 us 1615746484520418.0 1615746484521262.0
+blas-intercept: daxpy GPU n: 7          load: 820.0 us	 kernel: 18.0 us 1615746484521450.0 1615746484522288.0
+amino_gl.c cblas_sgemm
+blas-intercept: sgemm GPU m: 4 n: 4 k: 4 914.0 us
+blas-intercept: dger GPU m: 7          n: 6          load: 2006.0 us	 kernel: 47.0 us 1615746484688139.0 1615746484690192.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1070.0 us	 kernel: 22.0 us 1615746484690491.0 1615746484691583.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1068.0 us	 kernel: 22.0 us 1615746484691835.0 1615746484692925.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1069.0 us	 kernel: 21.0 us 1615746484693172.0 1615746484694262.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1080.0 us	 kernel: 21.0 us 1615746484694498.0 1615746484695599.0
+blas-intercept: dger GPU m: 7          n: 6          load: 1063.0 us	 kernel: 21.0 us 1615746484695844.0 1615746484696928.0
+blas-intercept: dgemm GPU m: 7          n: 7          k: 6          load: 1065.0 us	 kernel: 52.0 us 1615746484697165.0 1615746484698282.0
+blas-intercept: dscal GPU n: 42         load: 1040.0 us	 kernel: 24.0 us 1615746484698524.0 1615746484699588.0
+blas-intercept: daxpy GPU n: 7          load: 1105.0 us	 kernel: 18.0 us 1615746484699597.0 1615746484700720.0
+blas-intercept: dgemv GPU m: 7          n: 7          load: 671.0 us	 kernel: 30.0 us 1615746484700903.0 1615746484701604.0
+blas-intercept: dgemv GPU m: 6          n: 7          load: 688.0 us	 kernel: 21.0 us 1615746484701849.0 1615746484702558.0
+blas-intercept: daxpy GPU n: 6          load: 818.0 us	 kernel: 17.0 us 1615746484702742.0 1615746484703577.0
+blas-intercept: dscal GPU n: 6          load: 808.0 us	 kernel: 18.0 us 1615746484703763.0 1615746484704589.0
+blas-intercept: dgemv GPU m: 7          n: 6          load: 1146.0 us	 kernel: 22.0 us 1615746484704644.0 1615746484705812.0
+blas-intercept: daxpy GPU n: 6          load: 821.0 us	 kernel: 18.0 us 1615746484706001.0 1615746484706840.0
+blas-intercept: daxpy GPU n: 7          load: 821.0 us	 kernel: 18.0 us 1615746484707024.0 1615746484707863.0
