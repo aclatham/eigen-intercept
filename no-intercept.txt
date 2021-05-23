@@ -1,0 +1,5 @@
+dger OK
+dgemv OK
+daxpy OK
+sgemm OK
+dscal OK

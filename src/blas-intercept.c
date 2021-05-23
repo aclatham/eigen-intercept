@@ -8,6 +8,11 @@
 #include <cuda_runtime.h>
 #include "cublas_v2.h"
 
+
+
+#define IDX2C(i ,j , ld ) ((( j )*( ld ))+( i ))
+#define MEMORY_ALIGNMENT 4096
+#define ALIGN_UP(x, size) ( ((size_t)x + (size - 1))&(~(size-1)) )
 #define USE_GPU 1
 
 cublasOperation_t translate(int trans) {
@@ -97,40 +102,92 @@ void cblas_dgemm(int layout, int transA, int transB, int m, int n, int k, double
     }
     else {
         printf("GPU ");
+	
+	// Start timer for variables
 	gettimeofday(&start, NULL);
-	double *d_a, *d_b, *d_c;
 
-        cudaError_t cudaStat;
+        // Initialize variables
+	double *d_a, *d_b, *d_c;
+	double *a, *b, *c;
+	cudaError_t cudaStat;
         cublasStatus_t stat;
         cublasHandle_t handle;
 
 	cublasOperation_t ta = translate(transA);
        	cublasOperation_t tb = translate(transB);
-
-	cudaStat = cudaMalloc((void**)&d_a, m * k * sizeof(A));
-	cudaStat = cudaMalloc((void**)&d_b, k * n * sizeof(B));
-	cudaStat = cudaMalloc((void**)&d_c, m * n * sizeof(C));
-
+        
 	stat = cublasCreate(&handle);
-	stat = cublasSetMatrix(m, k, sizeof(A), A, lda, d_a, m);
-	stat = cublasSetMatrix(k, n, sizeof(B), B, ldb, d_b, k);
-	stat = cublasSetMatrix(m, n, sizeof(C), C, ldc, d_c, m);
+
+	// End timer for variables
+	gettimeofday(&end, NULL);
+
+	printf("variables: %f ", (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec));
+
+	// Start timer for cudaHostRegister
+	gettimeofday(&start, NULL);
+
+	// Register existing host memory ranges with cudaHostRegister
+	cudaStat = cudaHostRegister(A, m * k * sizeof(double), cudaHostRegisterDefault);
+	if (cudaStat != cudaSuccess) printf("cudaHostRegister A failed in DGEMM %d\n", cudaStat);
+	cudaStat = cudaHostRegister(B, k * n * sizeof(double), cudaHostRegisterDefault);
+	if (cudaStat != cudaSuccess) printf("cudaHostRegister B failed in DGEMM %d\n", cudaStat);
+	cudaStat = cudaHostRegister(C, m * n * sizeof(double), cudaHostRegisterDefault);
+	if (cudaStat != cudaSuccess) printf("cudaHostRegister C failed in DGEMM %d\n", cudaStat);
+
+        // End timer for cudaHostRegister
+	gettimeofday(&end, NULL);
+
+	printf("cudaHostRegister: %f ", (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec));
+
+        // Start timer for cudaGetDevicePointer
+	gettimeofday(&start, NULL);
+
+	// Get device pointer of mapped host memory
+        cudaStat = cudaHostGetDevicePointer((void **) &d_a, (void **) A, 0);
+	if (cudaStat != cudaSuccess) printf("cudaHostGetDevicePointer A failed in DGEMM %d\n", cudaStat);
+	cudaStat = cudaHostGetDevicePointer((void **) &d_b, (void **) B, 0);
+	if (cudaStat != cudaSuccess) printf("cudaHostGetDevicePointer B failed in DGEMM %d\n", cudaStat);
+	cudaStat = cudaHostGetDevicePointer((void **) &d_c, (void **) C, 0);
+	if (cudaStat != cudaSuccess) printf("cudaHostGetDevicePointer C failed in DGEMM %d\n", cudaStat);
 
 	gettimeofday(&end, NULL);
-	load = (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec);
 
+	printf("cudaHostGetDevicePointer: %f ", (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec));
+	
+	//load = (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec);
+
+	// Start timer for kernel
 	gettimeofday(&start, NULL);
         stat = cublasDgemm(handle, ta, tb, m, n, k, &alpha, d_a, lda, d_b, ldb, &beta, d_c, ldc);
 
-	stat = cublasGetMatrix(m, n, sizeof(C), d_c, m, C, m);
+	cudaStat = cudaDeviceSynchronize();
+	if (cudaStat != cudaSuccess) printf("cudaDeviceSynchronize failed in DGEMM %d\n", cudaStat);
+	//stat = cublasGetMatrix(m, n, sizeof(C), d_c, m, C, m);
         gettimeofday(&end, NULL);
 
-	kernel = (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec);
+	printf("kernel: %f ", (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec));
 
+	//kernel = (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec);
+
+        // Start timer for cleanup
+	gettimeofday(&start, NULL);
+
+	// Unregister memory ranges
+	cudaStat = cudaHostUnregister(A);
+	if (cudaStat != cudaSuccess) printf("cudaHostUnregister A failed in DGEMM %d\n", cudaStat);
+	cudaStat = cudaHostUnregister(B);
+	if (cudaStat != cudaSuccess) printf("cudaHostUnregister B failed in DGEMM %d\n", cudaStat);
+	cudaStat = cudaHostUnregister(C);
+	if (cudaStat != cudaSuccess) printf("cudaHostUnregister C failed in DGEMM %d\n", cudaStat);
+
+	// Clean up remaining items
 	cudaFree(d_a);
 	cudaFree(d_b);
 	cudaFree(d_c);
 	cublasDestroy(handle);
+
+	gettimeofday(&end, NULL);
+	printf("Cleanup: %f ", (end.tv_sec - start.tv_sec) * 1000000.0 + (end.tv_usec - start.tv_usec));
     }
 
     printf("m: %-10d n: %-10d k: %-10d load: %0.1f us\t kernel: %0.1f us\n", m, n, k, load, kernel);

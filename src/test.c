@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "cblas.h"
 
+#define ALIGN_UP(x,size) ( ((size_t)x+(size-1))&(~(size-1)) )
 #define IDX2C(i ,j , ld ) ((( j )*( ld ))+( i ))
 
 void test_dger() {
@@ -38,7 +39,7 @@ void test_dger() {
 
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-	    if (a[IDX2C(i, j, m)] - verify[i][j] > 1e-10) pass = 0;
+	    if (abs(a[IDX2C(i, j, m)] - verify[i][j]) > 1e-10) pass = 0;
 	}
     }
 
@@ -81,7 +82,7 @@ void test_dgemv() {
     double verify[6] = {115, 120, 125, 130, 135, 140};
 
     for(int j = 0; j < m; j++) {
-        if (y[j] - verify[j] > 1e-10) pass = 0;
+        if (abs(y[j] - verify[j]) > 1e-10) pass = 0;
         //printf("%5.0f\n", y[j]);
     } 
 
@@ -98,6 +99,8 @@ void test_dgemv() {
 }
 
 void test_daxpy() {
+
+    //printf("Starting DAXPY\n");
     int n = 10;
     int pass = 1;
     double *x = (double *)malloc(sizeof(double) * n);
@@ -114,7 +117,7 @@ void test_daxpy() {
     double verify[10] = {3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
 
     for(int i = 0; i < n; i++) {
-	if (y[i] - verify[i] > 1e-10) pass = 0;
+	if (abs(y[i] - verify[i]) > 1e-10) pass = 0;
         //printf("%f ", y[i]);
     }
     //printf("\n");
@@ -213,7 +216,7 @@ void test_dscal() {
     double verify[6] = {0, 2, 4, 6, 8, 10};
 
     for (int j = 0; j < n; j++) {
-        if (x[j] - verify[j] > 1e-10) pass = 0;
+        if (abs(x[j] - verify[j]) > 1e-10) pass = 0;
     }
 
     if (pass == 1) {
@@ -225,6 +228,64 @@ void test_dscal() {
 
 }
 
+void test_large_dgemm() {
+
+    int n = 256;
+    int m = 256;
+    int k = 256;
+
+    size_t memsize = ((n * n * sizeof(double) + 4095) / 4096) * 4096;
+
+    double *a = (double *)malloc(k * m * sizeof(double));
+    double *b = (double *)malloc(n * k * sizeof(double));
+    double *c = (double *)malloc(n * m * sizeof(double));
+
+    //double *a = (double *) ALIGN_UP(a_UA, 4096);
+    //double *b = (double *) ALIGN_UP(b_UA, 4096);
+    //double *c = (double *) ALIGN_UP(c_UA, 4096);
+
+    int ind = 11;
+
+    for (int j = 0; j < k; j++) {
+        for (int i = 0; i < m; i++) {
+            a[IDX2C(i, j, m)] = (double)ind++;
+        }
+    }
+
+    ind = 11;
+
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < k; i++) {
+            b[IDX2C(i, j, k)] = (double)ind++;
+        }
+    }
+
+     ind = 11;
+
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < m; i++) {
+            c[IDX2C(i, j, m)] = (double)ind++;
+        }
+    }
+
+    double alpha = 2.5;
+    double beta = 3.2;
+
+    cblas_dgemm(CblasColMajor, CblasNoTrans, CblasNoTrans, m, n, k, alpha, a, m, b, k, beta, c, m);
+
+    printf ("c:\n");
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            printf (" %5.0f",c[ IDX2C (i,j,m )]);
+        }
+        printf ("\n");
+    }
+
+    free(a);
+    free(b);
+    free(c);
+
+}
 
 void test_dgemm() {
 
@@ -275,22 +336,22 @@ void test_dgemm() {
     cblas_dgemm(CblasColMajor, CblasNoTrans, CblasNoTrans, m, n, k, alpha, a, m, b, k, beta, c, m);
 
     //printf ("c:\n");
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-	    if (c[IDX2C(i, j, m)] - verify[i][j] > 1e-10) {
-                pass = 0;
-	    }
-            //printf (" %5.0f",c[ IDX2C (i,j,m )]);
-        }
-        //printf ("\n");
-    }
+    //for (int i = 0; i < m; i++) {
+      //  for (int j = 0; j < n; j++) {
+	//    if (abs(c[IDX2C(i, j, m)] - verify[i][j]) > 1e-10) {
+          //      pass = 0;
+	    //}
+  //          printf (" %5.0f",c[ IDX2C (i,j,m )]);
+    //    }
+      //  printf ("\n");
+  //  }
 
-    if (pass == 1) {
-        printf("dgemm OK\n");
-    }
-    else {
-        printf("dgemm FAILED\n");
-    }
+    //if (pass == 1) {
+    //    printf("dgemm OK\n");
+   // }
+    //else {
+      //  printf("dgemm FAILED\n");
+    //}
 
     free(a);
     free(b);
@@ -303,8 +364,11 @@ int main(void) {
     test_dger();
     test_dgemv();
     test_dgemm();
+    //test_dgemm();
+    //test_dgemm();
+    //test_large_dgemm();
     test_daxpy();
-    test_daxpy();
+    //test_daxpy();
     test_sgemm();
     test_dscal();
     return 0;

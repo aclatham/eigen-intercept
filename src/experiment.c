@@ -32,6 +32,8 @@ void exp_dger() {
         cblas_dger(CblasColMajor, m, n, alpha, x, 1, y, 1, a, m);
 
         free(a);
+	free(x);
+	free(y);
     }
 }
 
